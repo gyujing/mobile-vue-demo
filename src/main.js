@@ -7,6 +7,8 @@ import '@/utils/flexible'
 import { Button } from 'vant';
 import 'vant/lib/index.css';
 
+import '../mock/myMock'
+
 Vue.config.productionTip = false;
 Vue.use(Button);
 

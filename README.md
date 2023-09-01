@@ -1,4 +1,4 @@
-# cultruetravel-demo
+# mobile-vue-demo
 
 ## Project setup
 ```

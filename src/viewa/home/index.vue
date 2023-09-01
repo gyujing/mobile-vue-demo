@@ -1,12 +1,14 @@
 <template>
   <div>
-    <van-button color="red">主要按钮</van-button>
-    <button>按钮</button>
-    <input class="inputClass" value="" name="name">
+
+    <!-- <input class="inputClass" value="" name="name">
+    <input class="inputClass" value="" name="name"> -->
+    <van-button color="red" @click="submit">提交</van-button>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'WorkspaceJsonIndex',
 
@@ -21,7 +23,12 @@ export default {
   },
 
   methods: {
-    
+    submit(){
+      axios.get('/mock/test').then((res) => {
+        console.log(res)
+        this.list = res.data.data
+      })
+    }
   },
 };
 </script>
