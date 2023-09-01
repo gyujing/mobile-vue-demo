@@ -1,4 +1,9 @@
 # mobile-vue-demo
+## 涉及
+1. axios封装
+2. mock模拟接口
+3. 移动端适配
+
 
 ## Project setup
 ```
